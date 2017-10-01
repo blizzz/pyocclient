@@ -11,7 +11,7 @@ env:
     - NC_VERSION=10
 
 before_install:
-    - travis-build/setup_nc_docker.sh $OC_VERSION
+    - travis-build/setup_nc_docker.sh $NC_VERSION
 
 install:
     - pip install requests unittest-data-provider six

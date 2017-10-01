@@ -1,7 +1,7 @@
 #!/bin/bash
-OC_VERSION=$1
+NC_VERSION=$1
 
-docker pull nextcloud:$OC_VERSION
+docker pull nextcloud:$NC_VERSION
 DOCKER_ID=$(docker run -d -p 80:80 nextcloud:$NC_VERSION)
 
 # needed else occ isn't available directly...
